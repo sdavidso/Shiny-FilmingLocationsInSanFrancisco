@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filming Locations in San Francisco</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Filming Locations in San Francisco">
+  <meta name="author" content="Solomon Davidsohn">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Filming Locations in San Francisco</h1>
+    <h2>Pitch</h2>
+    <p>Solomon Davidsohn<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>I created a Shiny app based on a dataset of Film Locations in San Francisco. </p>
+
+<p>The purpose of the app is to digest the information and show the trends of film in San Francisco over time, as well as show locations for each year in movies in a user readable format.</p>
+
+<p>Dataset ource: <a href="https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am">https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Example Plot</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">plot(table(datamovie$Release.Year), 
+     col=ifelse(names(table(datamovie$Release.Year))==2003,&quot;red&quot;,&quot;black&quot;),
+     ylab=&quot;Number of Released Movies&quot;, xlab = &quot;Year&quot;,
+     main=&quot;Released movies per year with a scene in San Francisco&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-2.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Plot</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>In this given plot, it takes an example year (in this case 2003) and gives a way for the user to visualize the data as they are looking at it for that year. In 2003, a large amount of movies were filmed in San Francisco compared to other years. The featured red line provides easy visualization to see the activity for the selected year.</p>
+
+<p>This table also gives an overall view of the trend of movies filmed in San Francisco, showing a lot of activity in the 90&#39;s.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Text Output</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The app features different types of text output so users can interpret results.</p>
+
+<p>There is a confirmation line such as &quot;Inputted year 2014 has 8 movies.&quot; which lets the user know how many movies were shot in that year.</p>
+
+<p>Below that there is a data table shown that shows every location shot and which movie it was for, this allows the user to interact with the data and quickly find relevant information. This data table includes multiple scenes (for example, 8 movies in 2014 had 110 scenes) so while this is a lot more information this gives users the option to dig into the data and find more relevant information.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This app has two purposes, to tell a story of the trends over time of film in San Francisco, and to provide an interface to explore that data. </p>
+
+<p>Through plots, users are able to visualize the data they&#39;re taking in and can also guide users into picking years to create a table for.</p>
+
+<p>This app also makes a table making people interested in specific locations able to browse interesting data and learn things that they would want to learn about the given dataset.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Example Plot'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Plot'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Text Output'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Conclusion'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
