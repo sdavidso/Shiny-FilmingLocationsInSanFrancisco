@@ -18,7 +18,7 @@ I created a Shiny app based on a dataset of Film Locations in San Francisco.
 
 The purpose of the app is to digest the information and show the trends of film in San Francisco over time, as well as show locations for each year in movies in a user readable format.
 
-Dataset ource: https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am
+Dataset source: https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am
 
 --- .class #id 
 
